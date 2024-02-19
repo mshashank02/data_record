@@ -36,9 +36,12 @@ class SynchronizeAndPublish(Node):
         self.get_logger().info(f"Received Ackermann message - Steering Angle: {steering_angle}")
         self.ackermann_publisher.publish(ackermann_msg)
 
+        markers_array = markers_msg.markers
+        for marker in markers_array:
+            print(marker.id)
+
         # Process Markers message
-        # You may need to adjust the processing based on your specific requirements
-        # ...
+        
 
         # Publish the synchronized Markers message
         self.markers_publisher.publish(markers_msg)

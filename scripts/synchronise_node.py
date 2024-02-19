@@ -39,6 +39,8 @@ class SynchronizeAndPublish(Node):
         markers_array = markers_msg.markers
         for marker in markers_array:
             print(marker.id)
+            print(marker.x)
+            print(marker.y)
 
         # Process Markers message
         

@@ -29,14 +29,14 @@ class ImuToOdometry(Node):
             odom_msg = Odometry()
         
 
-            odom_msg.pose.orientation.x = msg.imu.orientation.x
-            odom_msg.pose.orientation.y = msg.imu.orientation.y
-            odom_msg.pose.orientation.z = msg.imu.orientation.z
-            odom_msg.pose.orientation.w = msg.imu.orientation.w
+            odom_msg.pose.pose.orientation.x = msg.imu.orientation.x
+            odom_msg.pose.pose.orientation.y = msg.imu.orientation.y
+            odom_msg.pose.pose.orientation.z = msg.imu.orientation.z
+            odom_msg.pose.pose.orientation.w = msg.imu.orientation.w
 
-            odom_msg.twist.angular.x = msg.imu.angular_velocity.x
-            odom_msg.twist.angular.y = msg.imu.angular_velocity.y
-            odom_msg.twist.angular.z = msg.imu.angular_velocity.z
+            odom_msg.twist.twist.angular.x = msg.imu.angular_velocity.x
+            odom_msg.twist.twist.angular.y = msg.imu.angular_velocity.y
+            odom_msg.twist.twist.angular.z = msg.imu.angular_velocity.z
 
             odom_msg.header.stamp = self.get_clock().now().to_msg()
             odom_msg.header.frame_id = 'odom'

@@ -14,7 +14,8 @@ find_package(std_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(ackermann_msgs REQUIRED)
-find_package(phasespace_msgs REQUIRED) 
+find_package(phasespace_msgs REQUIRED)
+find_package(vesc_msgs REQUIRED) 
 find_package(message_filters REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
@@ -54,6 +55,7 @@ install(TARGETS node
 ### NOTE add python nodes
 install(PROGRAMS
 	scripts/synchronise_node.py
+	scripts/imu_repub.py
 	DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

@@ -1,0 +1,3 @@
+source;share/data_record/environment/ament_prefix_path.sh
+source;share/data_record/environment/path.sh
+source;share/data_record/environment/pythonpath.sh

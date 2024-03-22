@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/mshashank02/sim_ws/src/data_record/build",
+  "command": "/usr/bin/g++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/home/mshashank02/sim_ws/src/data_record/include -isystem /opt/ros/foxy/include  -g   -Wall -Wextra -Wpedantic -std=gnu++17 -o CMakeFiles/node.dir/src/node.cpp.o -c /home/mshashank02/sim_ws/src/data_record/src/node.cpp",
+  "file": "/home/mshashank02/sim_ws/src/data_record/src/node.cpp"
+}
+]

@@ -12,7 +12,7 @@ class ImuToOdometry(Node):
 
     def __init__(self):
 
-        super.__init__('imu_repub')
+        super().__init__('imu_repub')
 
         #Subscriber for Vesc IMU msg
         self.subscription = self.create_subscription(
